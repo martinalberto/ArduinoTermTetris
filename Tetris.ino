@@ -324,6 +324,9 @@ void init_board() {
 void clear_lines() {
   int x,y,i,n;
   boolean newBoard[20][10];
+  //clear screen;
+  Serial.write(27);
+  Serial.print("c");
   
   for (y=0;y<20;y++) {
     for (x=0;x<10;x++) {
